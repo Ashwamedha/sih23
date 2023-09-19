@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="overlay" id="overlay">
+          <div class="sign-in" id="sign-in">
+            <h1>Welcome Back!</h1>
+            <p>To stay updated with development login with your personal info</p>
+            <button class="switch-button" id="slide-right-button">Sign In</button>
+          </div>
+          <div class="sign-up" id="sign-up">
+            <h1>Hello, New!!!</h1>
+            <p>Enter your personal details and stay updated</p>
+            <button class="switch-button" id="slide-left-button">Sign Up</button>
+          </div>
+        </div>
+        <div class="form">
+          <div class="sign-in" id="sign-in-info">
+            <h1>Sign In</h1>
+            <h4>As Site Manager</h4>
+            <div class="social-media-buttons">
+              <div class="icon">
+                <svg viewBox="0 0 24 24">
+                  <path fill="#000000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+              </svg>
+              </div>
+              <div class="icon">
+                <svg viewBox="0 0 45 45">
+                  <path fill="#000000" d="M23 21.5v5c0 .828.671 1.5 1.5 1.5h10.809c-.499 1.416-1.256 2.698-2.205 3.805l6.033 5.229C42.159 33.529 44 28.98 44 24c0-.828-.064-1.688-.202-2.702C43.697 20.555 43.062 20 42.312 20H24.5C23.671 20 23 20.672 23 21.5zM12.612 27.761C12.22 26.577 12 25.314 12 24s.22-2.577.612-3.761l-6.557-5.014C4.752 17.878 4 20.849 4 24s.752 6.122 2.056 8.775L12.612 27.761zM30.865 33.835C28.906 35.204 26.532 36 24 36c-4.212 0-7.917-2.186-10.059-5.478l-6.362 4.865C11.195 40.585 17.202 44 24 44c4.968 0 9.508-1.832 13.009-4.84L30.865 33.835zM37.515 9.297C33.813 5.881 29.013 4 24 4c-6.798 0-12.805 3.415-16.421 8.614l6.362 4.865C16.083 14.186 19.788 12 24 12c2.944 0 5.776 1.081 7.974 3.043.593.53 1.498.504 2.06-.059l3.525-3.524c.289-.288.447-.683.439-1.091C37.99 9.961 37.815 9.574 37.515 9.297z"></path>
+                </svg>
+              </div>
+              <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path fill="#000000" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+              </svg>
+              </div>
+            </div>
+            <p class="small">or use your email account:</p>
+            <form id="sign-in-form">      
+              <input type="email" placeholder="Email"/>
+              <input type="password" placeholder="Password"/>
+              <p class="forgot-password">Forgot your password?</p>
+              <button class="control-button in">Sign In</button>
+            </form>
+          </div>
+          <div class="sign-up" id="sign-up-info">
+            <h1>Create Account</h1>
+            <h4>As Site Manager</h4>
+            <div class="social-media-buttons">
+              <div class="icon">
+                <svg viewBox="0 0 24 24">
+                  <path fill="#000000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+              </svg>
+              </div>
+              <div class="icon">
+                <svg viewBox="0 0 45 45">
+                  <path fill="#000000" d="M23 21.5v5c0 .828.671 1.5 1.5 1.5h10.809c-.499 1.416-1.256 2.698-2.205 3.805l6.033 5.229C42.159 33.529 44 28.98 44 24c0-.828-.064-1.688-.202-2.702C43.697 20.555 43.062 20 42.312 20H24.5C23.671 20 23 20.672 23 21.5zM12.612 27.761C12.22 26.577 12 25.314 12 24s.22-2.577.612-3.761l-6.557-5.014C4.752 17.878 4 20.849 4 24s.752 6.122 2.056 8.775L12.612 27.761zM30.865 33.835C28.906 35.204 26.532 36 24 36c-4.212 0-7.917-2.186-10.059-5.478l-6.362 4.865C11.195 40.585 17.202 44 24 44c4.968 0 9.508-1.832 13.009-4.84L30.865 33.835zM37.515 9.297C33.813 5.881 29.013 4 24 4c-6.798 0-12.805 3.415-16.421 8.614l6.362 4.865C16.083 14.186 19.788 12 24 12c2.944 0 5.776 1.081 7.974 3.043.593.53 1.498.504 2.06-.059l3.525-3.524c.289-.288.447-.683.439-1.091C37.99 9.961 37.815 9.574 37.515 9.297z"></path>
+                </svg>
+              </div>
+              <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path fill="#000000" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+              </svg>
+              </div>
+            </div>
+            <p class="small">or use your email for registration:</p>
+            <form id="sign-up-form">
+              <input type="text" placeholder="Name"/>
+              <input type="email" placeholder="Email"/>
+              <input type="password" placeholder="Password"/>
+              <button class="control-button up">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="js/js.js"></script>
+</body>
+</html>
