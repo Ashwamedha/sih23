@@ -16,6 +16,7 @@
   }
   
   .container{
+    display: flex;
     width: var(--form-width);
     height: var(--form-height);
     position: relative;
